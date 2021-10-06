@@ -22,18 +22,19 @@ import dev.wakandaacademy.wakanda.poc.video.domain.Video;
 public interface VideoAPI {
 
 	/* metodo que retornara um registro, usando seu id como parametro */
+
 	@GetMapping("/{idVideo}")
-	@ResponseStatus(value = HttpStatus.OK) // com o metodo executado, retornara status 200 (OK)
+	@ResponseStatus(value = HttpStatus.OK) /* com o metodo executado, retornara status 200 (OK) */
 	VideoDTO buscaVideoPorId(@PathVariable Long idVideo);
 
 	/* metodo que adicionará um registro */
 	@PostMapping("/adicionaVideo")
-	@ResponseStatus(value = HttpStatus.CREATED) // com o metodo executado, retornara status 201 (CREATED)
+	@ResponseStatus(value = HttpStatus.CREATED) /* com o metodo executado, retornara status 201 (CREATED) */
 	ResponseEntity<VideoDTO> adicionaVideo(@RequestBody VideoFORM videoForm, UriComponentsBuilder uriBuilder);
 
 	/* metodo que irá atualizar um registro, usando seu id como parametro */
 	@PutMapping("/editaVideo/{idVideo}")
-	@ResponseStatus(value = HttpStatus.OK) // com o metodo executado, retornara status 200 (OK)
+	@ResponseStatus(value = HttpStatus.OK) /* com o metodo executado, retornara status 200 (OK) */
 	ResponseEntity<Video> editaVideo(@PathVariable Long idVideo, @RequestBody Video video);
 
 	/* metodo que irá deletar um registro,usando seu id como parametro */
@@ -50,3 +51,10 @@ public interface VideoAPI {
 	String working();
 
 }
+
+/*
+ * Interface da aplicação, que está definindo os métodos que serão implementados
+ * no controller (VideoRestController) já com algumas especificações
+ * incorporadas (que não será necessário expressar lá, tornando o código mais
+ * legível no controller).
+ */

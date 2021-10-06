@@ -24,5 +24,5 @@ public interface VideoRepository {
  * Interface que esta diretamente ligada com a infrastructure (sendo
  * implementada em VideoJpaRepository), sendo injetada na application/Service
  * (pois ela que vai buscar os metodos da VideoJpaRepository que implementam os
- * metodos da tecnologia de persistencia utilizada no projeto) 
+ * metodos da tecnologia de persistencia utilizada no projeto)
  */

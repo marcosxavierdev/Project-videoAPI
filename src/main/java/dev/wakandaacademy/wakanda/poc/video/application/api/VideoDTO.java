@@ -21,17 +21,19 @@ public class VideoDTO {
 		this.url = video.getUrl();
 	}
 
-	/*
-	 * metodo que irá converter uma lista de Videos para uma lista de
-	 * videoDTO (para a exibição de dados que queremos apresentar)
-	 */
 	public static List<VideoDTO> toList(List<Video> videos) {
 		return videos.stream().map(VideoDTO::new).collect(Collectors.toList());
 	}
 
 }
 
-/*
- * DTO - Classe que irá definir quais campos serão retornados na exibição
- * (metodos GET), impedindo que acessemos os dados diretamente da entidade
- */
+//	DTO - Classe que irá definir quais campos serão retornados na exibição
+//	(metodos GET), impedindo que acessemos os dados diretamente da entidade
+// 
+//
+//	metodo que irá converter uma lista de Videos para uma lista de videoDTO 
+//	(para a exibição de dados que queremos apresentar)
+//	
+//	public static List<VideoDTO> toList(List<Video> videos) {
+//		return videos.stream().map(VideoDTO::new).collect(Collectors.toList());
+//	}

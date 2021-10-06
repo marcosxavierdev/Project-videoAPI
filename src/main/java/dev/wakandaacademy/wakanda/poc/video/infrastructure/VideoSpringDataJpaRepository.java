@@ -21,5 +21,4 @@ public interface VideoSpringDataJpaRepository extends JpaRepository<Video, Long>
  * infrastructure, para que a mesma acesse os metodos diretamente da tecnologia
  * para fornecer ao service novos metodos de persistencia diminuindo assim o
  * acoplamento e dependencia entre classes.
- * 
  */

@@ -29,5 +29,4 @@ public interface VideoService {
  * oferecer metodos de persistencia (que podem aplicar regras de negocios) que
  * por suas vez recebem medotos da infrastructure que lidam diretamente com a
  * tecnologia de persistencia.
- * 
  */
