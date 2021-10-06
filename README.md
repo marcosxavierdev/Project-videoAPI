@@ -8,9 +8,9 @@ OBS: Anotações na parte inferior do código, para posteriores consultas.
 
 TECNOLOGIAS PRATICADAS
 
-Java
-Spring Boot
-Bando de dados H2
-JPA / Hibernate
-Lombok
-DDD
++ Java
++ Spring Boot
++ Bando de dados H2
++ JPA / Hibernate
++ Lombok
++ DDD
